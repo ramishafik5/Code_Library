@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animations</title>
+        <style>
+            .box
+            {
+                width: 200px;
+                height: 120px;
+                border-radius: 60px;
+                font-size: 50px;
+                padding: 10px;
+                font-family: sans-serif;
+                position: relative;
+                text-align: center;
+                animation: shape-shift 20s infinite linear;
+                /* animation-name: shape-shift
+                animation-duration: 2s
+                animation-iteration-count: infinite */
+                /*
+                ease-in,
+                ease-out,
+                linear,
+                ease-in-out,
+                cubic bezier
+                */
+            }
+            /* Animations */
+            /* moving object */
+            /* Frames --> KeyFrames, @keyframes */
+            /* Function --> Declaration, Definition, Call */
+            @keyframes shape-shift
+            {
+                0%{background-color: yellow; transform: scale(0.5);}
+                25%{background-color: green; border-radius: 0px; transform: translateX(200px) scale(1);}
+                50%{background-color: bisque; border-radius: 30px; transform: translateX(400px) scale(2);}
+                100%{background-color: yellow; border-radius: 60px; transform: scale(1);}
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>HTML5</p>
+        </div>
+    </body>
+</html>

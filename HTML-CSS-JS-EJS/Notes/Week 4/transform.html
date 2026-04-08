@@ -1,0 +1,46 @@
+<!--scale,translate,rotate,skew-->
+<!doctype html>
+<html>
+    <head>
+        <title>Transform</title>
+        <!--CSS3-->
+        <style>
+            body{
+                width: 600px;
+                margin: auto;
+                margin-top: 300px;
+            }
+            img
+            {
+                /*transform: scaleX(2) scaleY(0.5);*/
+                /* Negative X translate/move object left */
+                /* Positive X translate/move object right */
+                /* Negative Y translate/move object upwards */
+                /* Positive Y translate/move object downwards */
+                /*transform: translateX(-400px) translateY(-200px);*/
+                /* negative counterclockwise, positive clockwise */
+                /*transform: rotateX(-45deg);*/
+                /*transform: skew(13deg,7deg);*/
+            }
+            .green
+            {
+                color: green;
+            }
+            /* pseudo classes, hover, active */
+            img:hover
+            {
+                transform: translateX(200px) scale(2) rotate(90deg);
+            }
+            /* button down */
+            img:active
+            {
+             transform: translateX(-200px) scale(0.5) rotate(-90deg);   
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 class="green">Transform Lecture</h1>
+        <img src="CSS3-Transforms.png">
+    </body>
+</html>
