@@ -7,3 +7,5 @@ creates node_modueles folder
 
 express --view=ejs <folder name>
 creates base project set up (i.e routes folder and files, views folder and files)
+
+
