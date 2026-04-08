@@ -1,0 +1,40 @@
+<% include ./partials/header %>
+
+<section class="py-5 text-white hero" style="background: linear-gradient(135deg,#0f172a 0%, #0f3b2e 100%); border-radius: .5rem;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h1 class="display-5 fw-bold">Welcome to My Portfolio</h1>
+        <p class="lead">Explore my projects and get in touch!</p>
+        <a href="#projects-preview" class="btn btn-light btn-lg me-2">See Projects</a>
+        <a href="/contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+      </div>
+      <div class="col-md-5">
+        <div class="card shadow-lg bg-transparent border-0">
+          <img src="/media/poster.jpg" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects-preview" class="py-5">
+  <h2>Featured Projects</h2>
+  <div class="row g-4">
+    <% projects.forEach(function(p){ %>
+      <div class="col-md-4">
+        <div class="card h-100 project-card">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title"><%= p.title %></h5>
+            <p class="card-text text-muted flex-grow-1"><%= p.description %></p>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+  <div class="mt-3">
+    <a href="/projects" class="btn btn-primary">View All Projects</a>
+  </div>
+</section>
+
+<% include ./partials/footer %>

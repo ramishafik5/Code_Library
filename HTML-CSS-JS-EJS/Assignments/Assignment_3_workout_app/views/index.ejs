@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<div class="row justify-content-center">
+  <div class="col-md-8 text-center">
+    <h1 class="display-4 mb-3"><%= title %></h1>
+    <p class="lead mb-4"><%= subtitle %></p>
+
+    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+      <a href="/workouts" class="btn btn-primary btn-lg">
+        View All Workouts
+      </a>
+      <a href="/workouts/new" class="btn btn-outline-light btn-lg">
+        Add a New Workout
+      </a>
+    </div>
+
+    <hr class="my-5">
+
+    <p class="home-description">
+      Log your workouts with type, duration, date, and notes to track your fitness journey over time.
+    </p>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

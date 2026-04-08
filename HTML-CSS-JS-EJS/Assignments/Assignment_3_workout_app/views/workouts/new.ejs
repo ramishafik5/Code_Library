@@ -1,0 +1,43 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<h1 class="h3 mb-4"><%= title %></h1>
+
+<form action="/workouts" method="POST" class="card p-4 shadow-sm bg-white">
+  <div class="mb-3">
+    <label class="form-label" for="title">Workout Title</label>
+    <input type="text" class="form-control" id="title" name="title" required placeholder="Leg Day, Morning Run, etc.">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="type">Workout Type</label>
+    <select class="form-select" id="type" name="type">
+      <option value="Cardio">Cardio</option>
+      <option value="Strength">Strength</option>
+      <option value="Flexibility">Flexibility</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="duration">Duration (minutes)</label>
+    <input type="number" class="form-control" id="duration" name="duration" min="1" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="date">Date</label>
+    <input type="date" class="form-control" id="date" name="date" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label" for="notes">Notes (optional)</label>
+    <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+  </div>
+
+  <div class="d-flex justify-content-between">
+    <a href="/workouts" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-primary">Save Workout</button>
+  </div>
+</form>
+
+<%- include('../partials/footer') %>

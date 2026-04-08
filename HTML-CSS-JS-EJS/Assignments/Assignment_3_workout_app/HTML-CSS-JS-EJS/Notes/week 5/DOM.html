@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <ul id="topnav">
+            <li><a href="aboutus.htm">About Us</a></li>
+            <li><a href="order.htm">Order</a></li>
+            <li><a href="support.htm">Support</a></li>
+        </ul>
+    <script>
+        var list = document.getElementById("topnav");
+        var directions = document.createElement("li");
+        directions.innerHTML = "Directions";
+        var aboutus = document.querySelectorAll("#topnav li")[0];
+        list.insertBefore(directions, aboutus);
+    </script>
+    </body>
+ </html>
+ 

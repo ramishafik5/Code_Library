@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <%- include('partials/header', { title: 'Projects' }) %>
+  <body>
+
+    <main class="container py-5">
+      <h1 class="mb-4">My Projects</h1>
+
+      <% projects.forEach(function(p){ %>
+        <section class="mb-4">
+          <h3><%= p.title %></h3>
+          <p><%= p.description %></p>
+        </section>
+      <% }) %>
+    </main>
+
+    <%- include('partials/footer') %>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <%- include('partials/header', { title: 'About Me' }) %>
+  <body>
+    <main class="container py-5 page-about">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4">
+          <video class="img-fluid rounded" controls autoplay muted loop>
+            <source src="/media/video.mp4" type="video/mp4">
+            <source src="/media/video.ogv" type="video/ogv">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="col-md-8">
+          <h1>About Me</h1>
+          <p class="lead">
+            I’m Rami, a developer who builds clean, fast user experiences. 
+            I enjoy moving ideas from concept to production — especially when there’s an AI, automation, or UI involved.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+  </body>
+</html>

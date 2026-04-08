@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me Page</title>
+    <!-- full-size monitor style sheet-->
+    <link href="laptop.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
+    <!-- tablet style sheet-->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+    <!-- phone style sheet-->
+    <link href="mobile.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+    <!--link for video js-->
+    <script src="video.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <div id ="content">
+        <video
+        id="video"
+        controls 
+        poster="poster.JPG"
+        preload="auto"
+        >
+            <source src="video.mp4" type ="video/mp4">
+            <source src="video.ogv" type="video/gov">
+        </video>
+        <br>
+        <button onclick="playPause()">Play or Pause the Video</button>
+        </div>
+        <footer>
+            <p>©2025 by Rami Shafik</p>
+        </footer>
+    </body>
+</html>

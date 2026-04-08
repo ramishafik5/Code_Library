@@ -1,0 +1,28 @@
+<%- include('../partials/header') %>
+<%- include('../partials/navbar') %>
+
+<div class="auth-container">
+    <h1>Login</h1>
+
+    <div class="auth-box">
+        <% if (typeof error !== 'undefined') { %>
+            <p class="error-message"><%= error %></p>
+        <% } %>
+
+        <form action="/auth/login" method="POST">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="auth-btn">Login</button>
+        </form>
+    </div>
+
+    <p class="auth-bottom-text">
+        Don’t have an account? <a href="/auth/register">Register here</a>.
+    </p>
+</div>
+
+<%- include('../partials/footer') %>

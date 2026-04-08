@@ -1,0 +1,73 @@
+header {
+    text-align: center;
+    background-color: lightblue;
+    color: white;
+}
+
+#customfooter {
+    text-align: center;
+    background-color: lightblue;
+    color: black;
+}
+
+#first {
+    color: green;
+}
+
+.second {
+    color: orangered;
+}
+
+.element {
+    float: left;
+    margin-right: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.skill {
+    width: 360px;
+    background-color: aqua;
+}
+
+.project-item {
+    width: 360px;
+    background-color: orangered;
+    float: left;
+    margin-right: 20px;
+    color: white;
+    padding: 16px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+    .project-item{
+        background-color: purple;
+    }
+}
+
+/*@media (min-width: 650px) {
+    body{
+        background-color: pink;
+    }
+
+}*/
+
+
+@media (min-width: 650px) and (max-width: 800px){
+    body{
+        background-color: pink;
+    }
+}
+
+@media (max-width: 480p){
+    .project-item{
+        width: 180px;
+    }
+}
